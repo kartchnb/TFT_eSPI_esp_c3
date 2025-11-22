@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.autoscad": "json",
+        "*.autoinclude": "json5",
+        "*.automake": "yaml",
+        "tft_espi_esp32_s3.c": "cpp"
+    }
+}

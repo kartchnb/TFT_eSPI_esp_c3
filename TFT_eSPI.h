@@ -1,3 +1,4 @@
+// Modified for ESP32-C3
 /***************************************************
   Arduino TFT graphics library targeted at ESP8266
   and ESP32 based boards.
@@ -95,7 +96,8 @@
 // Include the processor specific drivers
 #if defined(CONFIG_IDF_TARGET_ESP32S3)
   #include "Processors/TFT_eSPI_ESP32_S3.h"
-#elif defined(CONFIG_IDF_TARGET_ESP32C3)
+//#elif defined(CONFIG_IDF_TARGET_ESP32C3)
+#elif defined(CONFIG_IDF_TARGET_ESP32C3) || defined(CONFIG_IDF_TARGET_ESP32C6) || defined(CONFIG_IDF_TARGET_ESP32H2)	//?// ESP32-C6 + ESP32-H2
   #include "Processors/TFT_eSPI_ESP32_C3.h"
 #elif defined (ESP32)
   #include "Processors/TFT_eSPI_ESP32.h"
